@@ -8,7 +8,7 @@ cookieLib是对cookie操作做一些简单的封装，包括获取cookie值，�
 
 该库会提供一个全局的Cookies对象，这个对象包含了所有的功能
 
-##接口说明
+## 接口说明
 
 ###Cookies
 Cookies(key,val,options)
