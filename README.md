@@ -69,7 +69,7 @@ secure： 它表示创建的 cookie 只能在 HTTPS 连接中被浏览器传递�
 **date**：    
 日期对象
 ###Cookies._getExpiresDate(expires,now)
-获取基于date的过去时间    
+获取基于date的过期时间    
 **expires**：    
 如果是数字，会返回现在到那个时间的日期    
 如果是字符串，则返回一个日期对象   
@@ -83,4 +83,12 @@ secure： 它表示创建的 cookie 只能在 HTTPS 连接中被浏览器传递�
 **opts**:    
 要设置的cookie的可选项 同Cookie函数中的opts 
 
-###Cookies._getCookieObjectFromString
+###Cookies._getCookieObjectFromString(documentCookie)
+把cookie字符串格式化成一个json对象，cookie的名与内容一一对应   
+**documentCookie**:  
+整个cookie字符串
+###Cookies._getKeyValuePairFromCookieString(cookieString)   
+把一个简单的cookie字符串转换成一个key、value对    
+**cookieString**:    
+一个等号分割的cookie字符串，单个cookie   
+
