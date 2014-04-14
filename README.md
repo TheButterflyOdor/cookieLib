@@ -3,6 +3,12 @@ cookieLib
 
 cookieLib是对cookie操作做一些简单的封装，包括获取cookie值，设置cookie值都可以很容易的操作，另外屏蔽了一些常规错误
 
+当前用户
+----------
+
+[百度地图](http://map.baidu.com/)    
+[百度团购](http://tuan.baidu.com/)   
+[+You]()
 
 文档说明
 ----------
