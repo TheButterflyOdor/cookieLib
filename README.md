@@ -4,13 +4,18 @@ cookieLib
 cookieLib是对cookie操作做一些简单的封装，包括获取cookie值，设置cookie值都可以很容易的操作，另外屏蔽了一些常规错误
 
 
-文档说明：
+文档说明
 ----------
 
 该库会提供一个全局的Cookies对象，这个对象包含了所有的功能
 
+属性说明
+----------
 
-接口说明
+###Cookie.enabled    
+如果为true表示当前支持cookie，否则不支持cookie
+
+公共接口说明
 ----------
 
 ###Cookies
@@ -85,10 +90,16 @@ secure： 它表示创建的 cookie 只能在 HTTPS 连接中被浏览器传递�
 
 ###Cookies._getCookieObjectFromString(documentCookie)
 把cookie字符串格式化成一个json对象，cookie的名与内容一一对应   
-**documentCookie**:  
+**documentCookie**:   
 整个cookie字符串
 ###Cookies._getKeyValuePairFromCookieString(cookieString)   
 把一个简单的cookie字符串转换成一个key、value对    
 **cookieString**:    
 一个等号分割的cookie字符串，单个cookie   
+>在生成对象的时候会试着解析urlEncode编码后的数据，如果解析失败的就原样输出，如果解析成功了就返回解析成功后的内容。
 
+###Cookies._renewCache()
+重新设置Cookie转换后键值对的对象和整个cookie 字符串    
+
+###Cookies._areEnabled()
+设置当前cookie的状态，表示当前浏览器是否禁用了cookie
