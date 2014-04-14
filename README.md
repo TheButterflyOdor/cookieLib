@@ -41,8 +41,8 @@ Cookies(key,val,options)
 
 >![获取cookie流程示意图](https://farm8.staticflickr.com/7011/13772915335_97ebbbf79c.jpg)
 
-###Cookies.set(key,val,[opts])
-
+###Cookies.set(key,val[,opts])     
+设置cookie的一个值和这个cookie的相关设置
 **key**:    
 cookie的键名
 
@@ -55,5 +55,12 @@ domain：域名
 expires：过期时间        
 secure： 它表示创建的 cookie 只能在 HTTPS 连接中被浏览器传递到服务器端进行会话验证，如果是 HTTP 连接则不会传递该信息
 
+
+私有接口说明
+-------------
+>私有接口是让cookieLib调用的，如果你可以接受这些接口带来的副作用的话 是可以直接调用的 ps：不作死就不会死
+
+###Cookies._getExtendedOptions(opts)      
+设置cookie的选项值，如果为空的话则设置默认值
 
 
