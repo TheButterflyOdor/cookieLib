@@ -46,7 +46,7 @@ Cookies(key,val,options)
 **key**:    
 cookie的键名
 
-**val**    
+**val**：    
 cookie的值
 
 **options**:      
@@ -62,6 +62,25 @@ secure： 它表示创建的 cookie 只能在 HTTPS 连接中被浏览器传递�
 
 ###Cookies._getExtendedOptions(opts)      
 设置cookie的选项值，如果为空的话则设置默认值     
-**opts**
-同Cookies.set中的opts
+**opts**：    
+同Cookies.set中的opts     
+###Cookies._isValidDate(date)
+判断当前date日期对象是否是合法的日期对象       
+**date**：    
+日期对象
+###Cookies._getExpiresDate(expires,now)
+获取基于date的过去时间    
+**expires**：    
+如果是数字，会返回现在到那个时间的日期    
+如果是字符串，则返回一个日期对象   
 
+###Cookies._generateCookieString(key,val,opts)    
+把对应的cookie名、值、选项转换成对应的字符串并返回结果      
+**key**:    
+要设置的cookie的名    
+**val**:   
+要设置的cookie对应的值    
+**opts**:    
+要设置的cookie的可选项 同Cookie函数中的opts 
+
+###Cookies._getCookieObjectFromString
