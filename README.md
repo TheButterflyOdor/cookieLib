@@ -61,6 +61,7 @@ secure： 它表示创建的 cookie 只能在 HTTPS 连接中被浏览器传递�
 >私有接口是让cookieLib调用的，如果你可以接受这些接口带来的副作用的话 是可以直接调用的 ps：不作死就不会死
 
 ###Cookies._getExtendedOptions(opts)      
-设置cookie的选项值，如果为空的话则设置默认值
-
+设置cookie的选项值，如果为空的话则设置默认值     
+**opts**
+同Cookies.set中的opts
 
