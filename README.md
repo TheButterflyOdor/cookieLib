@@ -53,7 +53,7 @@ Cookies(key,val,options)
 >![获取cookie流程示意图](https://farm8.staticflickr.com/7011/13772915335_97ebbbf79c.jpg)
 
 ###Cookies.set(key,val[,opts])     
-设置cookie的一个值和这个cookie的相关设置
+设置cookie的一个值和这个cookie的相关设置    
 **key**:    
 cookie的键名
 
